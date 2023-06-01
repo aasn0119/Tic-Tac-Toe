@@ -1,0 +1,95 @@
+body {
+    background-color: #242424;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#tic-tac-toe {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-gap: 6px;
+    border: 6px solid #ff9900;
+    border-radius: 24px;
+    padding: 10px;
+    box-shadow: 0 0 10px rgba(255, 170, 0, 0.6);
+}
+
+.cell {
+    background-color: white;
+    border-radius: 12px;
+    height: 100px;
+    width: 100px;
+    display: flex;
+    justify-content: center;align-items: center;
+    font-size: 40px;
+    font-weight: bold;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    transition: all 0.2s, ease-in-out;
+}
+
+.cell:hover {
+    background-color: gray;
+    cursor: pointer;
+}
+
+.results {
+    margin: 12px;
+    font-size: 25px;
+    color: white;
+    font-weight: bold;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+}
+
+button {
+    padding: 10px 24px;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    border: none;
+    border-radius: 24px;
+    text-transform: uppercase;
+    background-color: #242424;
+    color: white;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+button:hover {
+    background-color: gray;
+}
+
+.score {
+    margin: 12px;
+    font-size: 16px;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.player {
+    margin-right: 4rem;
+    border: 3px solid #ff9900;
+    padding: 10px 15px;
+    font-size: 20px;
+    border-radius: 20px;
+}
+
+.comp {
+    margin-left: 4rem;
+    border: 3px solid #ff9900;
+    padding: 10px 15px;
+    font-size: 20px;
+    border-radius: 20px;
+}
+
